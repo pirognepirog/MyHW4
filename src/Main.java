@@ -7,7 +7,7 @@ public class Main {
      int intX = 1;
      byte byteX = 1;
      short shortX = 1;
-     long longX = 1;
+     long longX = 1L;
      float floatX = 0.1f;
      double doubleX = 0.1;
     System.out.println("Задача 1");
@@ -67,7 +67,7 @@ public class Main {
         System.out.println("Задача 6");
         var q = 0;//количество
         var v = 0;//вес 1 екдиницы
-        var r = 0;//общий вес
+        var r = 0f;//общий вес
         var txt = "";// наименование компонента
         var txtQ = "";// наименование меры измерения
         //для бананов
