@@ -9,7 +9,7 @@ public class Main {
      short shortX = 1;
      long longX = 1L;
      float floatX = 0.1f;
-     double doubleX = 0.1;
+     double doubleX = 0.1D;
     System.out.println("Задача 1");
      System.out.println("int = " + intX + "; byte = " + byteX + "; short = " + shortX + "; long = " + longX + "; float = " + floatX + "; double = " + doubleX);
 
@@ -20,25 +20,25 @@ public class Main {
     float ff = 2.786f;
     short s = 569;
     short ss = -159;
-    short sss = 27897;
+    int sss = 27897;
     byte b = 67;
 
         //задача 3
 
-    var t1 = 23;
-    var t2 = 27;
-    var t3 = 27;
-    var p = 480;
-    var x = p / (t1+t2+t3);
+        int t1 = 23;
+        int t2 = 27;
+        int t3 = 30;
+        int p = 480;
+        int x = p / (t1+t2+t3);
         System.out.println("Задача 3");
     System.out.println("На каждого ученика рассчитано " + x + " листов бумаги");
 
         //задача 4
 
-    var bT = 16;
-    var t = 2;
-    var tX = 20;
-    var minT = (bT/t)*tX;
+        int bT = 16;
+        int t = 2;
+        int tX = 20;
+        int minT = (bT/t)*tX;
         System.out.println("Задача 4");
         System.out.println("За 20 минут машина произвела " + minT + " штук бутылок");
         tX = 24*60;
@@ -50,24 +50,24 @@ public class Main {
         System.out.println("За 3 дня (" + tX + " минут)  машина произвела " + minT + " штук бутылок");
 // расчет выполнен для работы машины без остановки, для месяца взято условно число 30 (так как не известно какой месяц
 // и какого года использовать)
-        tX = (30*24)*60;
-        minT = (bT/t)*tX;
+        tX = (30*24) * 60;
+        minT = (bT / t) * tX;
         System.out.println("За 1 месяц (" + tX + " минут)  машина произвела " + minT + " штук бутылок");
         System.out.println("Производительность машины в 1 минуту - " + bT/t +  " штук бутылок");
 
         //задача 5
 
-        var xK = 120/(2+4);//найдем количество классов
-        var bK = xK * 2;//нужно белой краски
-        var kK= xK * 4;//нужно коричневой краски
+        int xK = 120 / (2+4);//найдем количество классов
+        int bK = xK * 2;//нужно белой краски
+        int kK= xK * 4;//нужно коричневой краски
         System.out.println("Задача 5");
         System.out.println("В школе, где " + xK + " классов, нужно " + bK + " банок белой краски и " + kK + " банок коричневой краски");
 
         //задача 6
         System.out.println("Задача 6");
-        var q = 0;//количество
-        var v = 0;//вес 1 екдиницы
-        var r = 0f;//общий вес
+        int q = 0;//количество
+        int v = 0;//вес 1 екдиницы
+        float r = 0f;//общий вес
         var txt = "";// наименование компонента
         var txtQ = "";// наименование меры измерения
         //для бананов
@@ -112,11 +112,11 @@ public class Main {
 
         //задача 7
         System.out.println("Задача 7");
-        var unionMass = 7;//нужно скинуть вес
-        var minMass = 250;//минимально можно скинуть за 1 день
-        var maxMass = 500;//максимально можно скинуть за 1 день
-        var xDaysMin = 0;//сколдько потребуется дней при минимальном результате
-        var xDaysMax = 0;//сколдько потребуется дней при минимальном результате
+        int unionMass = 7;//нужно скинуть вес
+        int minMass = 250;//минимально можно скинуть за 1 день
+        int maxMass = 500;//максимально можно скинуть за 1 день
+        float xDaysMin = 0f;//сколдько потребуется дней при минимальном результате
+        float xDaysMax = 0f;//сколдько потребуется дней при минимальном результате
         xDaysMin = (unionMass * 1000) / minMass;
         xDaysMax = (unionMass * 1000) / maxMass;
         System.out.println("При  минимальном результате нужно -  " + xDaysMin + " дней");
@@ -126,11 +126,11 @@ public class Main {
         //задача 8
         System.out.println("Задача 8");
         var myName = "";//имя работника
-        var salary = 0;//месячная зарплата
-        var increase = 10;//увеличение зарплаты на 10%
-        var incomeYear = 0;//годовой доход
-        var incomeYearOld = 0;//годовой доход до повышения
-        var incomeMonth = 0;//месячный доход
+        int salary = 0;//месячная зарплата
+        int increase = 10;//увеличение зарплаты на 10%
+        float incomeYear = 0.0f;//годовой доход
+        int incomeYearOld = 0;//годовой доход до повышения
+        float incomeMonth = 0.0f;//месячный доход
 
         myName = "Маша ";
         salary = 67760;
